@@ -1,0 +1,10 @@
+lis = [2,3,5,9,1]
+low = 0
+high = len(lis)
+while low < high:
+    t=lis[low]
+    lis[low]=lis[high]
+    lis[high]=t
+    low = low + 1
+    high = high - 1
+print(lis)
